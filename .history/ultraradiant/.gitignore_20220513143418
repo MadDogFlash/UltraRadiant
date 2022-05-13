@@ -26,5 +26,3 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-
-var butter = require('buttercms')('your_api_token');
