@@ -11,7 +11,8 @@
   "dependencies": {
     "buttercms": "^1.2.9",
     "pinia": "^2.0.13",
-    "vue": "^3.2.33"
+    "vue": "^3.2.33",
+    "vuesax": "^4.0.1-alpha.25"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
