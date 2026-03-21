@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <!-- This line below -->
-    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>styles/main.css"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary SEO Meta Tags -->
+    <meta name="title" content="UltraRadiant - Valorant Ranked Climb Journey" />
+    <meta name="description" content="Follow my journey from Gold to Radiant in Valorant. VOD reviews, agent tier lists, climbing tips, live Twitch streams, and more. Real ranked gameplay, real improvement." />
+    <meta name="keywords" content="valorant ranked climb, valorant tips, valorant tier list, valorant vod review, how to rank up valorant, valorant radiant journey, valorant guides 2025, valorant ranked tips, best agents valorant ranked" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="UltraRadiant" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ultraradiant.gg/" />
+    <meta property="og:title" content="UltraRadiant - Valorant Ranked Climb Journey" />
+    <meta property="og:description" content="Follow my journey from Gold to Radiant in Valorant. VOD reviews, agent tier lists, climbing tips, and live streams." />
+    <meta property="og:image" content="https://ultraradiant.gg/og-image.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ultraradiant.gg/" />
+    <meta property="twitter:title" content="UltraRadiant - Valorant Ranked Climb Journey" />
+    <meta property="twitter:description" content="Follow my journey from Gold to Radiant in Valorant. VOD reviews, tier lists, climbing tips, and live streams." />
+    <meta property="twitter:image" content="https://ultraradiant.gg/og-image.jpg" />
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "UltraRadiant",
+      "url": "https://ultraradiant.gg",
+      "description": "Valorant ranked climb journey — VOD reviews, tier lists, tips, and live streams",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ultraradiant.gg/tips?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <title>UltraRadiant | Valorant Ranked Climb</title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --val-red: #FF4655;
+  --val-dark: #0A1117;
+  --val-surface: #13232F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A1117;
+  color: #E8EDF0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF4655;
+  border-radius: 3px;
+}
+
+/* Valorant-style heading */
+.val-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.val-glow {
+  text-shadow: 0 0 30px rgba(255, 70, 85, 0.6);
+}
+
+.val-border-glow {
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.2);
+  border: 1px solid rgba(255, 70, 85, 0.3);
+}
+
+.glass {
+  background: rgba(19, 35, 47, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Rank badge colors */
+.rank-iron { color: #7B8FA1; }
+.rank-bronze { color: #B26A40; }
+.rank-silver { color: #8FA8BF; }
+.rank-gold { color: #C9AA71; }
+.rank-plat { color: #5C8CAD; }
+.rank-diamond { color: #5B6EAD; }
+.rank-ascendant { color: #2F8B5C; }
+.rank-immortal { color: #B23A50; }
+.rank-radiant { color: #FFFBA3; }
+
+/* Clip path accent lines */
+.clip-corner {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.clip-corner-sm {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+/* Twitch embed */
+.twitch-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.twitch-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* YouTube embed */
+.yt-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.yt-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
